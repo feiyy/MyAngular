@@ -1,0 +1,13 @@
+ <div *ngIf = "selectedHero">
+ 	  <h2>{{selectedHero.name}} details!</h2>
+ 	  <p>id:{{selectedHero.id}}</p>
+ 	 <!-- <p><input type='text' value="{{selectedHero.name}}"/></p>-->
+ 	 
+ 	  <a  routerLink="/heroes/heroedit/{{selectedHero.id}}" routerLinkActive="active">Edit Hero</a>
+ 	  <button (click)="goedithero(selectedHero.id)">Edit Hero</button>
+ 	   
+ </div>
+ 
+
+ 
+ 

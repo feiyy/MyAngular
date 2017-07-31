@@ -1,0 +1,12 @@
+<div>
+	<input #mydata type="text" (keyup)="senddata(mydata.value)" />
+	
+	
+	<input #mymobile type="text" (blur)="getmobileinfo(mymobile.value)" />
+	
+	<div *ngIf="cellinfo">
+		<p>{{cellinfo.province}}</p>
+		<p>{{cellinfo.catName}}</p>
+	</div>
+	
+</div>
